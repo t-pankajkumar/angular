@@ -1,3 +1,7 @@
+<input #name>
+<button (click)="onAddProduct(name)">Add Product</button>
 <h1>
-  {{title}}
+  <app-product *ngFor="let product of products" [product]="product"></app-product>
 </h1>
+<hr>
+<app-users></app-users>

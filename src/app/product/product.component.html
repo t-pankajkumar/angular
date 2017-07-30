@@ -1,0 +1,6 @@
+<p>
+  {{product.name}} {{product.price | currency:"INR":"1"}}   
+  <button (click)="addPrice()">Add</button>
+  <button (click)="subPrice()">Subtract</button>
+</p>
+<div [ngClass]="product.range.class"> {{product.range.text | uppercase}}</div>
